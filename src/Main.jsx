@@ -1,16 +1,16 @@
 var React = require('react');
 
+var Menu = require('./Menu.jsx');
+
 var Main = React.createClass({
     render: function() {
-        return <div>
+        return (
+            <div>
+                <Menu/>
+
                 main
-                <br/>
-                <a href="/a">a</a>
-                <br/>
-                <a href="/b">b</a>
-                <br/>
             </div>
-            ;
+        );
     },
 });
 

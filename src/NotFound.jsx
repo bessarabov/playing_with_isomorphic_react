@@ -1,17 +1,13 @@
 var React = require('react');
 
-var Menu = require('./Menu.jsx');
-
-var B = React.createClass({
+var NotFound = React.createClass({
     render: function() {
         return(
             <div>
-                <Menu/>
-
-                B
+                NotFound
             </div>
         );
     },
 });
 
-module.exports = B;
+module.exports = NotFound;

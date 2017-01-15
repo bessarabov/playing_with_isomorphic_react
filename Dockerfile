@@ -19,6 +19,7 @@ ADD src /app/src
 RUN npm run build
 
 ADD cmd /app/
+ADD app.js /app/app.js
 
 EXPOSE 80
 

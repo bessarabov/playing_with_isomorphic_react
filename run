@@ -2,9 +2,13 @@ docker run \
     --rm \
     -it \
     --publish 80:80 \
+    --publish 8080:8080 \
+    --volume `pwd`/index.html:/app/index.html \
+    --volume `pwd`/app.js:/app/app.js \
+    --volume `pwd`/entry.js:/app/entry.js \
+    --volume `pwd`/package.json:/app/package.json \
     --volume `pwd`/src/:/app/src/ \
     --volume `pwd`/yarn.lock:/app/yarn.lock \
-    --volume `pwd`/package.json:/app/package.json \
     --name playing_with_isomorphic_react \
     playing_with_isomorphic_react \
     bash

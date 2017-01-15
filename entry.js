@@ -1,9 +1,9 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Main = require('./src/Main.jsx');
+var Application = require('./src/Application.jsx');
 
 ReactDOM.render(
-    <Main/>,
+    <Application/>,
     document.getElementById('content')
 );
