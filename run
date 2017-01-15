@@ -1,0 +1,12 @@
+docker run \
+    --rm \
+    -it \
+    --publish 80:80 \
+    --volume `pwd`/src/:/app/src/ \
+    --volume `pwd`/yarn.lock:/app/yarn.lock \
+    --volume `pwd`/package.json:/app/package.json \
+    --name playing_with_isomorphic_react \
+    playing_with_isomorphic_react \
+    bash
+
+
